@@ -1,9 +1,8 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('Test') {
             steps {
-                echo 'Compiling the MVN source code'
                 bat 'mvn clean test'
             }
         }
